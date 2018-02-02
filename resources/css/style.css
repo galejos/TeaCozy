@@ -1,7 +1,7 @@
 /* Temporary */
-div {
+/*div {
   border: 1px solid white;
-}
+}*/
 
 /* General */
 
@@ -12,12 +12,23 @@ body {
   opacity: 0.9;
   text-align: center;
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: seashell;
 }
 
+.text-content {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 1200px;
+  height: 125px;
+}
 
 /* Header */
 
@@ -27,6 +38,9 @@ header {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid seashell;
+  padding-top: 5px;
+  margin: auto;
+  background-color: black;
 }
 
 nav span {
@@ -41,14 +55,26 @@ nav span {
   display: flex;
   flex-grow: 1;
   height: 69px;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
 .logo img {
   height: 50px;
   padding-left: 10px;
-  margin: 0:
+  padding-top: 5px;
+  margin: 0;
+}
+
+/* Main Content Container */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+  padding-top: 75px;
+  padding-bottom: 40px;
 }
 
 /* Top Section */
@@ -62,12 +88,10 @@ nav span {
   height: 700px;
 }
 
-.text-content {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  background-color: black;
-  width: 1200px;
-  height: 130px;
+
+
+/* Middle Section */
+
+.middle.section .text-content {
+  padding-top: 100px;
 }
